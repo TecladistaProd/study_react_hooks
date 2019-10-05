@@ -1,0 +1,58 @@
+{
+  "name": "study_react_hooks",
+  "version": "1.0.0",
+  "description": "study purpose",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel public/index.html --port 3000",
+    "build": "cross-env NODE_ENV=production parcel build public/index.html --no-source-maps --public-url /study_react_hooks/",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "keywords": [
+    "JavaScript",
+    "ParcelJS",
+    "NodeJS",
+    "React",
+    "React",
+    "Hooks"
+  ],
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(sass)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "reporters": [
+      "default",
+      [
+        "./node_modules/jest-html-reporter",
+        {
+          "pageTitle": "Test Report",
+          "outputPath": "./__test__/results/index.html"
+        }
+      ]
+    ]
+  },
+  "author": "TecladistaProd",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@testing-library/react": "^9.3.0",
+    "autoprefixer": "^9.6.1",
+    "babel-preset-react-app": "^9.0.2",
+    "cross-env": "^6.0.3",
+    "cssnano": "^4.1.10",
+    "enzyme": "^3.10.0",
+    "jest": "^24.9.0",
+    "jest-html-reporter": "^2.6.2",
+    "parcel-bundler": "^1.12.3",
+    "postcss": "^7.0.18",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "sass": "^1.23.0"
+  }
+}
